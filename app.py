@@ -14,7 +14,7 @@ def get_embed_token():
     client_id = os.getenv("CLIENT_ID")
     client_secret = os.getenv("CLIENT_SECRET")
     workspace_id = "883daf4b-6b56-40a9-83f2-56d8b52a48cc"
-    report_id = "f3446f80-6d80-49cb-93be-470f53f83fdf"
+    report_id = "d58a8bae-f9e5-434b-9902-6d7702d05b0f"
 
     try:
         # Step 1: Authenticate with Azure AD
@@ -47,7 +47,7 @@ def get_embed_token():
         embed_token_response.raise_for_status()
         embed_token = embed_token_response.json().get("token")
 
-        return jsonify({"embedUrl": embed_url, "embedToken": embed_token})
+        return jsonify({"embedUrl": embed_url, "embedToken": embed_token, "access_token":access_token})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
