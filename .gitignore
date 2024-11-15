@@ -1,0 +1,51 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+logs/
+
+# Compiled files
+*.so
+*.dll
+*.dylib
+
+# IDE configurations
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# Coverage reports
+coverage/
+*.cover
+.hypothesis/
+
+# Temporary files
+*.bak
+*.swp
+*.tmp
+
+# Docker files
+docker-compose.override.yml
+*.pid
