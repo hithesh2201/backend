@@ -14,7 +14,7 @@ def get_embed_token():
     client_id = os.getenv("CLIENT_ID")
     client_secret = os.getenv("CLIENT_SECRET")
     workspace_id = "883daf4b-6b56-40a9-83f2-56d8b52a48cc"
-    report_id = "bac7c3a3-7ccd-46a1-a580-728cddbd66e1"
+    report_id = "f3446f80-6d80-49cb-93be-470f53f83fdf"
 
     try:
         # Step 1: Authenticate with Azure AD
